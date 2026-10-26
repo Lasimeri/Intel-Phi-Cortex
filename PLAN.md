@@ -327,7 +327,7 @@ The host/card split: the card runs the 120 columns, vote, consensus, head and th
 - **Core 59** shares issue slots with the block pollers if those spin.
 - **Online slow-weight learning** can forget the pretraining; Stage 6 measures that before the mode is enabled by default.
 - **Mount**: /mnt is ntfs3 on a USB HDD, not in fstab, and the volume is flagged dirty. Every script checks `findmnt -no SOURCE /mnt` = `/dev/sda2` before writing. Otherwise the writes land on the near-full root fs.
-- **git**: not initialised; no commit or push unless asked.
+- **git**: public repository https://github.com/Lasimeri/Intel-Phi-Cortex since 2026-10-26 01:4x (first commit 786f6fe: stages 0 to 5, the trained checkpoints, every gate report); the corpus, token shards and raw gate dumps are not in it (.gitignore).
 
 ## Sources
 
