@@ -1,0 +1,26 @@
+2026-10-25 09:03:07
+gen: 5 sets of 1048576 float32s in /mnt/Intel Phi Cortex/data/isa
+phictl put: 45472 bytes
+phictl put: 4194304 bytes
+isa exp2: 1048576 values
+phictl get: 4194304 bytes
+phictl put: 4194304 bytes
+isa rcp: 1048576 values
+phictl get: 4194304 bytes
+phictl put: 4194304 bytes
+isa rsqrt: 1048576 values
+phictl get: 4194304 bytes
+phictl put: 4194304 bytes
+isa log2: 1048576 values
+phictl get: 4194304 bytes
+phictl put: 4194304 bytes
+isa log2: 1048576 values
+phictl get: 4194304 bytes
+exp2 specials: 2^-inf=0 2^-0=1 2^0=1 2^nan=1 2^1=2 2^2=4 2^-1=0.5 2^-2=0.25 2^10=1024 2^-10=0.000976562 2^-126=1.17549e-38 2^127=1.70141e+38 2^-200=0 2^200=inf 2^0.5=1.41421 2^-0.5=0.707107
+exp2 vs 2^x                  n 1048560  max 1.165  median 0.2529  p99.9 0.8723  > 1 ulp: 90
+exp2 vs 2^(Q8.24 x)          n 1048560  max 0.9366  median 0.2504  p99.9 0.7486  > 0.99 ulp: 0
+rcp vs 1/x                   n 1048576  max 0.8991  median 0.2505  p99.9 0.7329  > 0.912 ulp: 0
+rsqrt vs 1/sqrt(x)           n 1048576  max 0.704  median 0.2499  p99.9 0.6218  > 0.775 ulp: 0
+log2 outside [0.5,2]         n  996344  max 1.038  median 0.2504  p99.9 0.7279  > 4 ulp: 0
+log2 inside [0.5,2] abs      n   52232  max 9.266e-08  median 1.669e-08  p99.9 8.232e-08  > 4.76837e-07 abs: 0
+log2d [0.5,2] abs            n 1048576  max 9.479e-08  median 1.619e-08  p99.9 7.782e-08  > 4.76837e-07 abs: 0

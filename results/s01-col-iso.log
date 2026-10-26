@@ -1,0 +1,24 @@
+col-gate: 120 threads x 4000 steps, pf 1, ring 1, stride 1, pmu 0x2016/0x10cb, column 235968 B at 6702656-B stride offsets, pin failures 0, thread 0 cpu 1, last cpu 240
+wall 0.6649 s: 6016.0 steps/s per thread, 721920.7 column-steps/s
+per step per thread: VPU instructions 0.0 (thread 0 0.0, min 0.0, max 0.0), L2 read misses 879.00 (thread 0 1311.43)
+thread 0 step ticks: min 89948, mean 139040.7 (1238.093 MHz: 72.65 us min, 112.30 us mean)
+rc=0
+col-gate: 60 threads x 4000 steps, pf 1, ring 64, stride 2, pmu 0x2016/0x10cb, column 235968 B at 6702656-B stride offsets, pin failures 0, thread 0 cpu 1, last cpu 237
+wall 0.1689 s: 23675.8 steps/s per thread, 1420546.2 column-steps/s
+per step per thread: VPU instructions 0.0 (thread 0 0.0, min 0.0, max 0.0), L2 read misses 152.80 (thread 0 179.38)
+thread 0 step ticks: min 32536, mean 38760.9 (1238.093 MHz: 26.28 us min, 31.31 us mean)
+rc=0
+col-gate: 60 threads x 4000 steps, pf 1, ring 1, stride 2, pmu 0x2016/0x10cb, column 235968 B at 6702656-B stride offsets, pin failures 0, thread 0 cpu 1, last cpu 237
+wall 0.1503 s: 26614.9 steps/s per thread, 1596893.8 column-steps/s
+per step per thread: VPU instructions 0.0 (thread 0 0.0, min 0.0, max 0.0), L2 read misses 32.38 (thread 0 51.22)
+thread 0 step ticks: min 28503, mean 34362.4 (1238.093 MHz: 23.02 us min, 27.75 us mean)
+rc=0
+col-gate: 1 threads x 2000 steps, pf 1, ring 64, stride 1, pmu 0x16/0x2a, column 235968 B at 6702656-B stride offsets, pin failures 0, thread 0 cpu 1, last cpu 1
+wall 0.0652 s: 30662.6 steps/s per thread, 30662.6 column-steps/s
+per step per thread: VPU instructions 13408.9 (thread 0 13408.9, min 13408.9, max 13408.9), L2 read misses 0.00 (thread 0 0.00)
+thread 0 step ticks: min 31956, mean 36241.5 (1238.093 MHz: 25.81 us min, 29.27 us mean)
+rc=0
+file                                n    min ns    median       p99     p99.9       max      mean
+iso-ring1-n120-step.u32          4000  113199.9  150092.9  287657.7  433441.6  593075.0  166161.2
+iso-stride2-n60-step.u32         4000   33729.3   36334.9  125113.4  227728.5  359052.2   42181.3
+iso-stride2-ring1-n60-step.u32     4000   30190.0   31852.2  113965.6  264175.6  316349.4   37503.1

@@ -1,0 +1,20 @@
+train-gate fwd: cpu 1, L 8, warm 8; us per step: warm-up fwd 92.33, chunk fwd 93.94, head logits 1800.05, softmax+loss 16.10; mean loss 8.419864 nats
+rc=0
+train-check fwd: L 8 warm 8: mean loss ref 8.419864 card 8.419864; max |loss err| 3.846e-07; dl max abs err 2.977e-09 (max |dl| 1.250e-01, rel 2.382e-08); hc max abs err 1.139e-06 (max |hc| 3.478, rel 3.275e-07)
+train-gate fwd: cpu 1, L 32, warm 64; us per step: warm-up fwd 84.03, chunk fwd 88.48, head logits 1789.54, softmax+loss 16.70; mean loss 8.489014 nats
+rc=0
+train-check fwd: L 32 warm 64: mean loss ref 8.489014 card 8.489014; max |loss err| 8.327e-07; dl max abs err 9.274e-10 (max |dl| 3.125e-02, rel 2.968e-08); hc max abs err 1.199e-06 (max |hc| 3.180, rel 3.770e-07)
+train-gate fwd: cpu 1, L 32, warm 64; us per step: warm-up fwd 123.39, chunk fwd 124.77, head logits 214.34, softmax+loss 18.84; mean loss 8.489014 nats
+rc=0
+train-gate fwd: cpu 1, L 32, warm 64; us per step: warm-up fwd 123.03, chunk fwd 123.26, head logits 214.58, softmax+loss 18.64; mean loss 8.489014 nats
+rc=0
+train-check fwd: L 32 warm 64: mean loss ref 8.489014 card 8.489014; max |loss err| 8.327e-07; dl max abs err 9.274e-10 (max |dl| 3.125e-02, rel 2.968e-08); hc max abs err 1.199e-06 (max |hc| 3.180, rel 3.770e-07)
+train-gate (nr 1 evict 1): cpu 1, L 32, warm 64; us per step: warm-up fwd 86.84, chunk fwd 85.48, head logits 187.61, softmax+loss 18.77; mean loss 8.489014 nats
+train-gate-plain (nr 0 evict 0): cpu 1, L 32, warm 64; us per step: warm-up fwd 49.64, chunk fwd 53.20, head logits 177.11, softmax+loss 17.75; mean loss 8.489014 nats
+train-gate-nr (nr 1 evict 0): cpu 1, L 32, warm 64; us per step: warm-up fwd 51.40, chunk fwd 86.76, head logits 198.63, softmax+loss 20.06; mean loss 8.489014 nats
+train-gate-ev (nr 0 evict 1): cpu 1, L 32, warm 64; us per step: warm-up fwd 57.39, chunk fwd 55.01, head logits 171.66, softmax+loss 18.59; mean loss 8.489014 nats
+train-gate (nr 1 evict 1): cpu 1, L 32, warm 64; us per step: warm-up fwd 87.43, chunk fwd 87.75, head logits 190.73, softmax+loss 18.92; mean loss 8.489014 nats
+train-gate-plain (nr 0 evict 0): cpu 1, L 32, warm 64; us per step: warm-up fwd 49.62, chunk fwd 52.29, head logits 183.47, softmax+loss 19.98; mean loss 8.489014 nats
+train-gate-nr (nr 1 evict 0): cpu 1, L 32, warm 64; us per step: warm-up fwd 51.41, chunk fwd 87.76, head logits 201.15, softmax+loss 17.75; mean loss 8.489014 nats
+train-gate-ev (nr 0 evict 1): cpu 1, L 32, warm 64; us per step: warm-up fwd 57.72, chunk fwd 52.72, head logits 167.68, softmax+loss 18.41; mean loss 8.489014 nats
+train-check fwd: L 32 warm 64: mean loss ref 8.489014 card 8.489014; max |loss err| 8.327e-07; dl max abs err 9.274e-10 (max |dl| 3.125e-02, rel 2.968e-08); hc max abs err 1.199e-06 (max |hc| 3.180, rel 3.770e-07)

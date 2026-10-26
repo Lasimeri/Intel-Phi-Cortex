@@ -1,0 +1,74 @@
+2026-10-25 09:06:14
+phictl put: 55032 bytes
+rep 4 central  100000 rounds in 1.811 s wall
+rep 4 tree2    100000 rounds in 1.761 s wall
+rep 4 tree4    100000 rounds in 1.597 s wall
+rep 4 tree8    100000 rounds in 1.664 s wall
+rep 4 flat     100000 rounds in 1.647 s wall
+rep 4 tree4r   100000 rounds in 0.931 s wall
+rep 4 core4r   100000 rounds in 0.756 s wall
+rep 4 core2r   100000 rounds in 0.747 s wall
+rc 0
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+file                                n    min ns    median       p99     p99.9       max      mean
+bar-tree4-r0.u32               100000    7280.6   14073.3   35066.0   43929.7  147926.7   15596.3
+bar-tree4-r1.u32               100000    8115.7   15628.1   35319.6   44171.2  166599.8   15913.3
+bar-tree4-r2.u32               100000    7826.6   13248.6   34464.3   44449.8  192534.8   15049.3
+bar-tree4-r3.u32               100000    7353.2   16027.9   35061.2   45059.6  175103.2   15760.3
+bar-tree4-r4.u32               100000    7530.1   13635.5   34605.6   44813.3  151676.8   15454.3
+bar-tree4r-r0.u32              100000    7738.5    8593.9   13417.4   38880.0   87734.9    8847.7
+bar-tree4r-r1.u32              100000    7643.2    8592.2   12470.8   38181.3  162118.7    8841.7
+bar-tree4r-r2.u32              100000    7682.0    8582.6   11377.2   38126.4  170239.2    8836.8
+bar-tree4r-r3.u32              100000    7640.0    8526.0   12918.3   38108.6  155947.9    8780.4
+bar-tree4r-r4.u32              100000    7777.3    8622.9   13255.9   37984.2  185375.4    8872.0
+bar-core4r-r0.u32              100000    5216.9    6912.2    7778.1   36443.1  110801.0    7102.9
+bar-core4r-r1.u32              100000    5544.8    6933.2    7663.4   35578.9   97067.0    7066.8
+bar-core4r-r2.u32              100000    4623.2    6947.8    9228.7   35721.1  149437.1    7128.2
+bar-core4r-r3.u32              100000    6238.6    6949.4    9264.2   36381.8  160693.9    7142.9
+bar-core4r-r4.u32              100000    6152.2    6964.7    9192.4   36387.4  177403.5    7154.2
+bar-core2r-r0.u32              100000    6463.2    6972.8    8094.7   37267.8  206772.8    7190.9
+bar-core2r-r1.u32              100000    6384.0    6787.9    8011.5   36822.8  224718.2    7041.8
+bar-core2r-r2.u32              100000    6354.1    6800.8    7548.7   36116.8  108948.2    7032.8
+bar-core2r-r3.u32              100000    6363.0    6760.4    7602.0   36406.0  124302.5    7008.5
+bar-core2r-r4.u32              100000    6380.8    6808.9    7631.1   36766.2   97398.2    7054.3
+bar-central-r0.u32             100000     854.5   17274.1   37750.0   48199.9  171894.2   17598.5
+bar-flat-r0.u32                100000    7104.5   15599.8   35473.1   44487.0  158621.4   16500.1

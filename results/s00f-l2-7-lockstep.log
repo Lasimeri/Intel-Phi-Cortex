@@ -1,0 +1,98 @@
+2026-10-25 09:20:36
+phictl put: 60352 bytes
+pinning (setup): 120 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 119 cpu 240
+rep 0 l2pf2   4000 passes x 120 threads in 0.6979 s: 72.4 GFLOP/s, 144.7 GB/s of weights
+    per pass per thread: L2 read misses 1655.8 (worst thread 2317.3), L1 data read misses 0.0; lines per block 3288
+rep 0 lockpf2 4000 passes x 120 threads in 0.9041 s: 55.9 GFLOP/s, 111.7 GB/s of weights
+    per pass per thread: L2 read misses 1919.3 (worst thread 3066.9), L1 data read misses 0.0; lines per block 3288
+rep 0 lockrpf2 4000 passes x 120 threads in 0.3111 s: 162.3 GFLOP/s, 324.6 GB/s of weights
+    per pass per thread: L2 read misses 83.1 (worst thread 234.7), L1 data read misses 0.0; lines per block 3288
+rep 0 l2rpf2  4000 passes x 120 threads in 0.2297 s: 219.8 GFLOP/s, 439.7 GB/s of weights
+    per pass per thread: L2 read misses 78.0 (worst thread 183.9), L1 data read misses 0.0; lines per block 3288
+rep 0 gddrpf   300 passes x 120 threads in 0.0433 s: 87.6 GFLOP/s, 175.1 GB/s of weights
+    per pass per thread: L2 read misses 3298.1 (worst thread 3341.0), L1 data read misses 0.0; lines per block 3288
+rep 1 l2pf2   4000 passes x 120 threads in 0.6986 s: 72.3 GFLOP/s, 144.6 GB/s of weights
+    per pass per thread: L2 read misses 1686.8 (worst thread 2366.8), L1 data read misses 0.0; lines per block 3288
+rep 1 lockpf2 4000 passes x 120 threads in 0.8565 s: 59.0 GFLOP/s, 117.9 GB/s of weights
+    per pass per thread: L2 read misses 1928.7 (worst thread 2912.8), L1 data read misses 0.0; lines per block 3288
+rep 1 lockrpf2 4000 passes x 120 threads in 0.3093 s: 163.3 GFLOP/s, 326.6 GB/s of weights
+    per pass per thread: L2 read misses 82.6 (worst thread 238.9), L1 data read misses 0.0; lines per block 3288
+rep 1 l2rpf2  4000 passes x 120 threads in 0.2315 s: 218.2 GFLOP/s, 436.3 GB/s of weights
+    per pass per thread: L2 read misses 78.6 (worst thread 187.6), L1 data read misses 0.0; lines per block 3288
+rep 1 gddrpf   300 passes x 120 threads in 0.0431 s: 88.0 GFLOP/s, 175.9 GB/s of weights
+    per pass per thread: L2 read misses 3296.4 (worst thread 3336.3), L1 data read misses 0.0; lines per block 3288
+rep 2 l2pf2   4000 passes x 120 threads in 0.6998 s: 72.2 GFLOP/s, 144.3 GB/s of weights
+    per pass per thread: L2 read misses 1672.3 (worst thread 2382.0), L1 data read misses 0.0; lines per block 3288
+rep 2 lockpf2 4000 passes x 120 threads in 0.8459 s: 59.7 GFLOP/s, 119.4 GB/s of weights
+    per pass per thread: L2 read misses 1920.4 (worst thread 2918.6), L1 data read misses 0.0; lines per block 3288
+rep 2 lockrpf2 4000 passes x 120 threads in 0.3079 s: 164.0 GFLOP/s, 328.1 GB/s of weights
+    per pass per thread: L2 read misses 82.7 (worst thread 237.8), L1 data read misses 0.0; lines per block 3288
+rep 2 l2rpf2  4000 passes x 120 threads in 0.2322 s: 217.5 GFLOP/s, 434.9 GB/s of weights
+    per pass per thread: L2 read misses 79.1 (worst thread 191.4), L1 data read misses 0.0; lines per block 3288
+rep 2 gddrpf   300 passes x 120 threads in 0.0431 s: 87.9 GFLOP/s, 175.9 GB/s of weights
+    per pass per thread: L2 read misses 3295.7 (worst thread 3337.4), L1 data read misses 0.0; lines per block 3288
+pinning (last run): 120 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 119 cpu 240
+pinning (setup): 118 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 117 cpu 234
+rep 0 l2pf2   4000 passes x 118 threads in 0.6459 s: 76.9 GFLOP/s, 153.8 GB/s of weights
+    per pass per thread: L2 read misses 1575.6 (worst thread 2405.3), L1 data read misses 0.0; lines per block 3288
+rep 0 lockpf2 4000 passes x 118 threads in 0.7962 s: 62.4 GFLOP/s, 124.7 GB/s of weights
+    per pass per thread: L2 read misses 1880.0 (worst thread 2950.9), L1 data read misses 0.0; lines per block 3288
+rep 0 lockrpf2 4000 passes x 118 threads in 0.2904 s: 171.0 GFLOP/s, 342.0 GB/s of weights
+    per pass per thread: L2 read misses 80.5 (worst thread 131.3), L1 data read misses 0.0; lines per block 3288
+rep 0 l2rpf2  4000 passes x 118 threads in 0.2144 s: 231.7 GFLOP/s, 463.3 GB/s of weights
+    per pass per thread: L2 read misses 78.9 (worst thread 133.2), L1 data read misses 0.0; lines per block 3288
+rep 0 gddrpf   300 passes x 118 threads in 0.0420 s: 88.6 GFLOP/s, 177.2 GB/s of weights
+    per pass per thread: L2 read misses 3326.0 (worst thread 3338.0), L1 data read misses 0.0; lines per block 3288
+rep 1 l2pf2   4000 passes x 118 threads in 0.6522 s: 76.1 GFLOP/s, 152.3 GB/s of weights
+    per pass per thread: L2 read misses 1577.6 (worst thread 2430.4), L1 data read misses 0.0; lines per block 3288
+rep 1 lockpf2 4000 passes x 118 threads in 0.8315 s: 59.7 GFLOP/s, 119.5 GB/s of weights
+    per pass per thread: L2 read misses 1879.2 (worst thread 3036.2), L1 data read misses 0.0; lines per block 3288
+rep 1 lockrpf2 4000 passes x 118 threads in 0.3016 s: 164.6 GFLOP/s, 329.3 GB/s of weights
+    per pass per thread: L2 read misses 82.2 (worst thread 182.7), L1 data read misses 0.0; lines per block 3288
+rep 1 l2rpf2  4000 passes x 118 threads in 0.2154 s: 230.5 GFLOP/s, 461.1 GB/s of weights
+    per pass per thread: L2 read misses 78.0 (worst thread 139.1), L1 data read misses 0.0; lines per block 3288
+rep 1 gddrpf   300 passes x 118 threads in 0.0416 s: 89.5 GFLOP/s, 179.0 GB/s of weights
+    per pass per thread: L2 read misses 3325.1 (worst thread 3336.1), L1 data read misses 0.0; lines per block 3288
+rep 2 l2pf2   4000 passes x 118 threads in 0.6455 s: 76.9 GFLOP/s, 153.9 GB/s of weights
+    per pass per thread: L2 read misses 1576.0 (worst thread 2425.7), L1 data read misses 0.0; lines per block 3288
+rep 2 lockpf2 4000 passes x 118 threads in 0.8011 s: 62.0 GFLOP/s, 124.0 GB/s of weights
+    per pass per thread: L2 read misses 1880.6 (worst thread 2913.5), L1 data read misses 0.0; lines per block 3288
+rep 2 lockrpf2 4000 passes x 118 threads in 0.2980 s: 166.6 GFLOP/s, 333.3 GB/s of weights
+    per pass per thread: L2 read misses 81.5 (worst thread 174.3), L1 data read misses 0.0; lines per block 3288
+rep 2 l2rpf2  4000 passes x 118 threads in 0.2153 s: 230.7 GFLOP/s, 461.3 GB/s of weights
+    per pass per thread: L2 read misses 78.0 (worst thread 139.3), L1 data read misses 0.0; lines per block 3288
+rep 2 gddrpf   300 passes x 118 threads in 0.0421 s: 88.6 GFLOP/s, 177.1 GB/s of weights
+    per pass per thread: L2 read misses 3326.5 (worst thread 3340.4), L1 data read misses 0.0; lines per block 3288
+pinning (last run): 118 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 117 cpu 234
+rc 0
+phictl get: 16000 bytes
+phictl get: 16000 bytes
+phictl get: 16000 bytes
+phictl get: 16000 bytes
+phictl get: 16000 bytes
+phictl get: 16000 bytes
+phictl get: 1888000 bytes
+phictl get: 16000 bytes
+phictl get: 1888000 bytes
+phictl get: 16000 bytes
+phictl get: 1888000 bytes
+phictl get: 16000 bytes
+phictl get: 1888000 bytes
+phictl get: 16000 bytes
+phictl get: 1888000 bytes
+phictl get: 16000 bytes
+phictl get: 1888000 bytes
+phictl get: 16000 bytes
+file                                n    min ns    median       p99     p99.9       max      mean
+l2-lockrpf2-n120-r0-step.u32     4000   54450.7   70784.7  141646.9  282192.9  323727.7   77662.5
+l2-lockrpf2-n120-r1-step.u32     4000   32430.5   70737.8  135839.6  254698.2  324501.5   77216.4
+l2-lockrpf2-n120-r2-step.u32     4000   45769.6   70663.5  134237.1  226269.8  310546.9   76859.7
+l2-lockrpf2-n118-r0-step.u32     4000   31055.8   69552.1  124532.6  202716.6  371710.4   72478.9
+l2-lockrpf2-n118-r1-step.u32     4000   31053.4   69948.7  156985.0  241091.7  362476.8   75294.4
+l2-lockrpf2-n118-r2-step.u32     4000   30995.2   69856.6  149344.2  258792.4  321378.9   74390.3
+l2-lockpf2-n120-r0-step.u32      4000  185734.8  221313.7  281928.7  403295.2  448208.7  225915.9
+l2-lockpf2-n120-r1-step.u32      4000  184538.6  209229.8  267900.7  409897.3  458723.2  214023.4
+l2-lockpf2-n120-r2-step.u32      4000  185077.4  205838.3  271739.7  427824.1  448805.5  211375.0
+l2-lockrpf2-n120-r0-all.u32    472000   23584.7   58345.4   92507.6  113338.8  296787.1   59691.5
+l2-lockrpf2-n120-r1-all.u32    472000   23316.5   58336.5   92602.9  106761.8  277125.4   59593.7
+l2-lockrpf2-n120-r2-all.u32    472000   23373.0   58344.6   92864.6  106635.8  283458.5   59726.5

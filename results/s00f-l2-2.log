@@ -1,0 +1,64 @@
+2026-10-25 09:11:21
+phictl put: 56648 bytes
+rep 0 l2      4000 passes x 120 threads in 0.5561 s: 90.8 GFLOP/s, 181.6 GB/s of weights
+rep 0 l2pf2   4000 passes x 120 threads in 0.6922 s: 73.0 GFLOP/s, 145.9 GB/s of weights
+rep 0 l2pf8   4000 passes x 120 threads in 0.7181 s: 70.3 GFLOP/s, 140.7 GB/s of weights
+rep 0 gddr     300 passes x 120 threads in 0.0572 s: 66.2 GFLOP/s, 132.5 GB/s of weights
+rep 0 gddrpf   300 passes x 120 threads in 0.0430 s: 88.1 GFLOP/s, 176.2 GB/s of weights
+rep 1 l2      4000 passes x 120 threads in 0.5561 s: 90.8 GFLOP/s, 181.6 GB/s of weights
+rep 1 l2pf2   4000 passes x 120 threads in 0.6951 s: 72.7 GFLOP/s, 145.3 GB/s of weights
+rep 1 l2pf8   4000 passes x 120 threads in 0.7195 s: 70.2 GFLOP/s, 140.4 GB/s of weights
+rep 1 gddr     300 passes x 120 threads in 0.0572 s: 66.2 GFLOP/s, 132.4 GB/s of weights
+rep 1 gddrpf   300 passes x 120 threads in 0.0431 s: 88.0 GFLOP/s, 176.0 GB/s of weights
+rep 2 l2      4000 passes x 120 threads in 0.5601 s: 90.2 GFLOP/s, 180.4 GB/s of weights
+rep 2 l2pf2   4000 passes x 120 threads in 0.6957 s: 72.6 GFLOP/s, 145.2 GB/s of weights
+rep 2 l2pf8   4000 passes x 120 threads in 0.7182 s: 70.3 GFLOP/s, 140.6 GB/s of weights
+rep 2 gddr     300 passes x 120 threads in 0.0599 s: 63.2 GFLOP/s, 126.5 GB/s of weights
+rep 2 gddrpf   300 passes x 120 threads in 0.0428 s: 88.5 GFLOP/s, 177.0 GB/s of weights
+rc 0
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+file                                n    min ns    median       p99     p99.9       max      mean
+l2-l2-r0-all.u32               472000   63624.5  130328.7  178534.2  197987.6  938563.6  131697.2
+l2-l2-r1-all.u32               472000   63805.4  131380.3  179110.9  196343.1  498693.6  132492.5
+l2-l2-r2-all.u32               472000   63879.7  131288.2  179161.8  196384.3  490549.6  132522.8
+l2-l2pf2-r0-all.u32            472000   14040.1  147729.6  236828.7  283496.5  575738.7  144983.7
+l2-l2pf2-r1-all.u32            472000   14041.8  148332.2  233043.1  278102.7  400303.5  144993.6
+l2-l2pf2-r2-all.u32            472000   14045.8  148745.7  233808.0  267037.3  424011.8  145376.9
+l2-l2pf8-r0-all.u32            472000   14910.0  152276.9  250249.4  291861.8  638141.9  148997.0
+l2-l2pf8-r1-all.u32            472000   14897.9  153394.8  247450.7  355824.6  584301.8  148768.8
+l2-l2pf8-r2-all.u32            472000   14910.0  153658.1  245744.1  281200.2  403042.4  148095.6
+l2-l2pf2-r0-c59.u32              8000   29155.3  140012.9  240649.1  265448.6  325599.1  141075.4
+l2-l2pf2-r1-c59.u32              8000   25250.9  135570.6  236333.6  259914.2  275346.8  137119.9
+l2-l2pf2-r2-c59.u32              8000   24349.5  141004.8  242128.0  263082.0  290479.8  141575.8
+l2-gddrpf-r0-all.u32            35400   37936.6  126622.2  223025.2  301738.2  652004.3  136818.4
+l2-gddrpf-r1-all.u32            35400   33599.3  126398.4  221014.1  283968.2  554437.3  136594.0
+l2-gddrpf-r2-all.u32            35400   37068.3  126457.4  219292.9  292096.8  456418.1  136453.9

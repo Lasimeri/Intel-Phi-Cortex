@@ -1,0 +1,14 @@
+col-gate: 1 threads x 10000 steps, pf 0, column 235968 B at 6702656-B stride offsets, pin failures 0, thread 0 cpu 1, last cpu 1
+wall 0.9271 s: 10786.3 steps/s per thread, 10786.3 column-steps/s
+per step per thread: VPU instructions 0.0 (thread 0 0.0, min 0.0, max 0.0), L2 read misses 180.98 (thread 0 180.98)
+thread 0 step ticks: min 99313, mean 109527.6 (1238.093 MHz: 80.21 us min, 88.46 us mean)
+rc=0
+col-gate: 120 threads x 4000 steps, pf 0, column 235968 B at 6702656-B stride offsets, pin failures 0, thread 0 cpu 1, last cpu 240
+wall 0.6813 s: 5871.4 steps/s per thread, 704565.0 column-steps/s
+per step per thread: VPU instructions 0.0 (thread 0 0.0, min 0.0, max 0.0), L2 read misses 991.00 (thread 0 1362.69)
+thread 0 step ticks: min 131924, mean 168248.0 (1238.093 MHz: 106.55 us min, 135.89 us mean)
+rc=0
+file                                n    min ns    median       p99     p99.9       max      mean
+col-n120-step-r2.u32             4000  122465.0  150275.5  273675.7  415209.5  482110.0  163755.7
+colnp-n1-ticks-t0.u32           10000   80214.5   81880.0  147207.0  244069.7  477737.1   88464.7
+colnp-n120-step.u32              4000  131279.3  149356.3  332017.9  462818.2  525490.4  170225.5

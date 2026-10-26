@@ -1,0 +1,6 @@
+col-gate: 1 threads x 2000 steps, pf 1, ring 64, stride 1, pmu 0x10cb/0x16, column 198592 B at 6702656-B stride offsets, pin failures 0, thread 0 cpu 1, last cpu 1
+per step per thread: instructions (pmu0) 146.2 (thread 0 146.2, min 146.2, max 146.2), L2 read misses 0.00 (thread 0 0.00)
+rc=0
+col-gate: 1 threads x 2000 steps, pf 1, ring 64, stride 1, pmu 0x16/0x16, column 198592 B at 6702656-B stride offsets, pin failures 0, thread 0 cpu 1, last cpu 1
+per step per thread: instructions (pmu0) 11910.9 (thread 0 11910.9, min 11910.9, max 11910.9), L2 read misses 0.00 (thread 0 0.00)
+rc=0

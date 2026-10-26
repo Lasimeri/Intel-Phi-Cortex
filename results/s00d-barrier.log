@@ -1,0 +1,81 @@
+2026-10-25 09:04:40
+phictl put: 54440 bytes
+rep 0 central  100000 rounds in 1.904 s wall
+rep 0 tree2    100000 rounds in 1.150 s wall
+rep 0 tree4    100000 rounds in 1.080 s wall
+rep 0 tree8    100000 rounds in 1.120 s wall
+rep 0 flat     100000 rounds in 1.274 s wall
+rep 1 central  100000 rounds in 1.862 s wall
+rep 1 tree2    100000 rounds in 1.149 s wall
+rep 1 tree4    100000 rounds in 1.080 s wall
+rep 1 tree8    100000 rounds in 1.120 s wall
+rep 1 flat     100000 rounds in 1.274 s wall
+rep 2 central  100000 rounds in 1.864 s wall
+rep 2 tree2    100000 rounds in 1.149 s wall
+rep 2 tree4    100000 rounds in 1.078 s wall
+rep 2 tree8    100000 rounds in 1.119 s wall
+rep 2 flat     100000 rounds in 1.274 s wall
+rep 3 central  100000 rounds in 1.863 s wall
+rep 3 tree2    100000 rounds in 1.149 s wall
+rep 3 tree4    100000 rounds in 1.078 s wall
+rep 3 tree8    100000 rounds in 1.120 s wall
+rep 3 flat     100000 rounds in 1.276 s wall
+rep 4 central  100000 rounds in 1.863 s wall
+rep 4 tree2    100000 rounds in 1.148 s wall
+rep 4 tree4    100000 rounds in 1.079 s wall
+rep 4 tree8    100000 rounds in 1.121 s wall
+rep 4 flat     100000 rounds in 1.284 s wall
+rc 0
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+phictl get: 400000 bytes
+/mnt/Intel: No such file or directory
+file                                n    min ns    median       p99     p99.9       max      mean
+file                                n    min ns    median       p99     p99.9       max      mean
+bar-central-r0.u32             100000     949.0   17779.8   38632.0   49354.1  299681.8   18132.0
+bar-central-r1.u32             100000    1876.3   17753.1   38744.3   49193.4  180420.2   18115.8
+bar-central-r2.u32             100000     702.7   17776.5   38551.2   49503.6  166339.7   18117.9
+bar-central-r3.u32             100000     369.1   17771.7   38280.6   48984.2  166368.8   18109.2
+bar-central-r4.u32             100000     715.6   17779.8   38504.4   48918.8  188414.8   18119.0
+bar-tree2-r0.u32               100000    6752.3   10734.3   28650.5   40962.2  165007.0   11036.8
+bar-tree2-r1.u32               100000    6800.8   10734.3   29135.9   42148.7  163178.4   11051.1
+bar-tree2-r2.u32               100000    7033.4   10732.6   28674.7   41142.3  183181.7   11042.8
+bar-tree2-r3.u32               100000    7130.3   10734.3   28610.1   40493.7  153371.4   11040.1
+bar-tree2-r4.u32               100000    6828.2   10735.9   28992.2   40563.2  167859.8   11037.4
+bar-tree4-r0.u32               100000    6440.6   10101.8   26909.1   41271.5  169108.5   10366.0
+bar-tree4-r1.u32               100000    6379.2   10098.6   26910.7   40712.6  169019.6   10362.0
+bar-tree4-r2.u32               100000    6146.5   10098.6   25739.6   39585.9  154198.4   10347.6
+bar-tree4-r3.u32               100000    6074.7   10097.8   26195.1   39741.0  196168.6   10336.1
+bar-tree4-r4.u32               100000    6175.6   10096.2   26196.7   39024.5  153865.7   10339.9
+bar-tree8-r0.u32               100000    6691.7   10487.9   28263.6   40297.5  163751.8   10760.1
+bar-tree8-r1.u32               100000    6161.1   10481.4   27614.2   39863.7  148300.7   10750.7
+bar-tree8-r2.u32               100000    6897.7   10487.9   27086.8   39825.0  150877.2   10754.2
+bar-tree8-r3.u32               100000    6813.7   10481.4   27664.3   40752.2  145750.8   10756.7
+bar-tree8-r4.u32               100000    6686.9   10486.3   27904.2   40827.3  183937.7   10761.6
+bar-flat-r0.u32                100000    8141.6   12008.8   30316.8   42709.2  198361.5   12291.9
+bar-flat-r1.u32                100000    8078.6   12008.8   30047.8   40384.7  110694.4   12277.5
+bar-flat-r2.u32                100000    7787.8   12008.8   29837.8   40938.8  161204.4   12284.9
+bar-flat-r3.u32                100000    8030.1   12010.4   30929.8   41744.8  150046.9   12297.8
+bar-flat-r4.u32                100000    7999.4   12008.8   29747.4   41003.4  165598.2   12284.9

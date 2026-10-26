@@ -1,0 +1,33 @@
+col-gate: 120 threads x 4000 steps, pf 1, column 235968 B at 6702656-B stride offsets, pin failures 0, thread 0 cpu 1, last cpu 240
+wall 0.7810 s: 5121.4 steps/s per thread, 614573.3 column-steps/s
+per step per thread: VPU instructions 0.0 (thread 0 0.0, min 0.0, max 0.0), L2 read misses 1055.21 (thread 0 1118.43)
+thread 0 step ticks: min 76457, mean 146895.1 (1238.093 MHz: 61.75 us min, 118.65 us mean)
+rc=0
+thread   0, 4000 steps: max abs err / max err rel to the vector's max |ref|
+  u (128)   2.813e-07  9.219e-07
+  bc (16)   3.231e-07  9.591e-07
+  g         7.793e-08  1.647e-07
+  T final   1.014e-07  3.428e-07
+  reference ranges: |u| max 0.6373, g 0.3784..0.6146, a max 0.8693, b max 0.8663, alpha max 0.0106
+thread  59, 4000 steps: max abs err / max err rel to the vector's max |ref|
+  u (128)   2.868e-07  9.031e-07
+  bc (16)   2.733e-07  1.086e-06
+  g         8.210e-08  1.557e-07
+  T final   7.523e-08  2.991e-07
+  reference ranges: |u| max 0.7310, g 0.3933..0.6199, a max 0.8419, b max 0.8811, alpha max 0.0105
+thread 119, 4000 steps: max abs err / max err rel to the vector's max |ref|
+  u (128)   2.888e-07  8.165e-07
+  bc (16)   2.862e-07  1.004e-06
+  g         8.137e-08  1.607e-07
+  T final   8.764e-08  2.850e-07
+  reference ranges: |u| max 0.6256, g 0.3999..0.6089, a max 0.8675, b max 0.8169, alpha max 0.0108
+file                                n    min ns    median       p99     p99.9       max      mean
+col-n120-step.u32                4000  117300.6  181075.3  328573.9  444232.4  718947.6  195186.5
+col-n120-ticks-t0.u32            4000   61753.8  106559.8  214003.3  262196.0  384055.2  118646.3
+col-n120-ticks-t59.u32           4000   75298.1   99964.2  200858.9  216068.6  345613.8  111720.4
+col-n120-ticks-t119.u32          4000   56333.4  135766.9  240780.0  256773.9  342839.4  139725.9
+col-gate: 120 threads x 4000 steps, pf 1, column 235968 B at 6702656-B stride offsets, pin failures 0, thread 0 cpu 1, last cpu 240
+wall 0.6554 s: 6103.4 steps/s per thread, 732412.5 column-steps/s
+per step per thread: VPU instructions 0.0 (thread 0 0.0, min 0.0, max 0.0), L2 read misses 1061.89 (thread 0 1282.48)
+thread 0 step ticks: min 94356, mean 150442.1 (1238.093 MHz: 76.21 us min, 121.51 us mean)
+rc=0

@@ -1,0 +1,49 @@
+train-gate bwd: cpu 1, L 16, warm 16; us per step: warm-up fwd 66.12, chunk fwd 64.52, head logits 167.51, softmax+loss 18.81; mean loss 8.445218 nats
+train-gate bwd: us per step: head dhc 460.91, column bwd 97.38, param grads 18.03, head dE 225.21, input rows 5.14; total train step 1057.50
+rc=0
+train-check bwd: L 16 warm 16: mean loss ref 8.445217 card 8.445218; max |loss err| 8.544e-07; dl max abs err 1.782e-09 (rel 2.852e-08); hc max abs err 1.081e-06 (rel 3.234e-07)
+gradients (card F32 vs host double):
+  dhc    n    2048  max |ref| 6.7611e-03  max abs err 7.339e-09  rel 1.086e-06  (at 1914: card -4.761850e-03 ref -4.761843e-03)
+  P_in   n    8192  max |ref| 1.2745e-01  max abs err 4.433e-03  rel 3.478e-02  (at 1226: card 6.708274e-03 ref 1.114153e-02)
+  Wqb    n    1024  max |ref| 2.3991e-02  max abs err 1.401e-03  rel 5.842e-02  (at 878: card -6.680629e-03 ref -5.279208e-03)
+  gain   n      80  max |ref| 5.9696e-02  max abs err 6.756e-02  rel 1.132e+00  (at 64: card -1.489350e-02 ref 5.266971e-02)
+  W      n   16640  max |ref| 6.3794e-02  max abs err 2.867e-08  rel 4.495e-07  (at 13921: card 6.379359e-02 ref 6.379356e-02)
+  W1     n    9216  max |ref| 3.4867e-01  max abs err 1.233e-07  rel 3.537e-07  (at 8338: card -1.125678e-02 ref -1.125690e-02)
+  b1     n      64  max |ref| 1.2531e-01  max abs err 4.503e-08  rel 3.594e-07  (at 14: card -1.833261e-02 ref -1.833257e-02)
+  Wu     n    8192  max |ref| 1.0841e-01  max abs err 6.942e-08  rel 6.403e-07  (at 4090: card -5.693864e-02 ref -5.693857e-02)
+  cg     n     128  max |ref| 4.4761e-02  max abs err 2.001e-08  rel 4.470e-07  (at 20: card -7.561604e-03 ref -7.561584e-03)
+  E      n  524288  max |ref| 2.7604e-01  max abs err 1.637e-02  rel 5.932e-02  (at 332436: card 1.423886e-02 ref 3.061242e-02)
+  E rows used as inputs: max abs err 1.637e-02
+train-gate bwd: cpu 1, L 16, warm 16; us per step: warm-up fwd 68.48, chunk fwd 64.46, head logits 167.99, softmax+loss 18.25; mean loss 8.445218 nats
+train-gate bwd: us per step: head dhc 455.39, column bwd 96.62, param grads 17.92, head dE 226.27, input rows 5.11; total train step 1052.01
+rc=0
+train-check bwd: L 16 warm 16: mean loss ref 8.445217 card 8.445218; max |loss err| 8.544e-07; dl max abs err 1.782e-09 (rel 2.852e-08); hc max abs err 1.081e-06 (rel 3.234e-07)
+gradients (card F32 vs host double):
+  dhc    n    2048  max |ref| 6.7611e-03  max abs err 7.339e-09  rel 1.086e-06  (at 1914: card -4.761850e-03 ref -4.761843e-03)
+  P_in   n    8192  max |ref| 1.2745e-01  max abs err 5.303e-08  rel 4.161e-07  (at 285: card 2.211966e-02 ref 2.211971e-02)
+  Wqb    n    1024  max |ref| 2.3991e-02  max abs err 8.845e-09  rel 3.687e-07  (at 992: card 1.068370e-02 ref 1.068371e-02)
+  gain   n      80  max |ref| 5.9696e-02  max abs err 2.351e-08  rel 3.939e-07  (at 76: card -1.616761e-02 ref -1.616758e-02)
+  W      n   16640  max |ref| 6.3794e-02  max abs err 2.867e-08  rel 4.495e-07  (at 13921: card 6.379359e-02 ref 6.379356e-02)
+  W1     n    9216  max |ref| 3.4867e-01  max abs err 1.233e-07  rel 3.537e-07  (at 8338: card -1.125678e-02 ref -1.125690e-02)
+  b1     n      64  max |ref| 1.2531e-01  max abs err 4.503e-08  rel 3.594e-07  (at 14: card -1.833261e-02 ref -1.833257e-02)
+  Wu     n    8192  max |ref| 1.0841e-01  max abs err 6.942e-08  rel 6.403e-07  (at 4090: card -5.693864e-02 ref -5.693857e-02)
+  cg     n     128  max |ref| 4.4761e-02  max abs err 2.001e-08  rel 4.470e-07  (at 20: card -7.561604e-03 ref -7.561584e-03)
+  E      n  524288  max |ref| 2.7604e-01  max abs err 1.285e-07  rel 4.657e-07  (at 49883: card 4.130042e-02 ref 4.130055e-02)
+  E rows used as inputs: max abs err 1.285e-07
+sh: ./train-gate: not found
+train-gate bwd: cpu 1, L 32, warm 64; us per step: warm-up fwd 60.04, chunk fwd 62.88, head logits 165.37, softmax+loss 18.40; mean loss 8.489014 nats
+train-gate bwd: us per step: head dhc 450.92, column bwd 92.79, param grads 20.97, head dE 247.37, input rows 4.18; total train step 1062.88
+rc=0
+train-check bwd: L 32 warm 64: mean loss ref 8.489014 card 8.489014; max |loss err| 8.327e-07; dl max abs err 9.274e-10 (rel 2.968e-08); hc max abs err 1.199e-06 (rel 3.770e-07)
+gradients (card F32 vs host double):
+  dhc    n    4096  max |ref| 3.3589e-03  max abs err 3.418e-09  rel 1.018e-06  (at 146: card -2.501100e-03 ref -2.501103e-03)
+  P_in   n    8192  max |ref| 7.5702e-02  max abs err 3.507e-08  rel 4.633e-07  (at 7355: card -4.839913e-03 ref -4.839948e-03)
+  Wqb    n    1024  max |ref| 1.1480e-02  max abs err 6.479e-09  rel 5.644e-07  (at 554: card 6.153677e-04 ref 6.153612e-04)
+  gain   n      80  max |ref| 4.2828e-02  max abs err 1.793e-08  rel 4.187e-07  (at 36: card 1.173444e-02 ref 1.173446e-02)
+  W      n   16640  max |ref| 3.3362e-02  max abs err 1.943e-08  rel 5.823e-07  (at 14961: card 1.145321e-02 ref 1.145323e-02)
+  W1     n    9216  max |ref| 1.8321e-01  max abs err 7.514e-08  rel 4.101e-07  (at 8440: card -4.487769e-02 ref -4.487762e-02)
+  b1     n      64  max |ref| 7.4649e-02  max abs err 5.816e-08  rel 7.791e-07  (at 5: card -2.091771e-02 ref -2.091765e-02)
+  Wu     n    8192  max |ref| 7.9524e-02  max abs err 4.064e-08  rel 5.111e-07  (at 7250: card 2.608368e-02 ref 2.608364e-02)
+  cg     n     128  max |ref| 2.9193e-02  max abs err 1.421e-08  rel 4.867e-07  (at 79: card -1.396043e-02 ref -1.396045e-02)
+  E      n  524288  max |ref| 1.6616e-01  max abs err 7.751e-08  rel 4.665e-07  (at 51175: card 3.717991e-02 ref 3.717998e-02)
+  E rows used as inputs: max abs err 7.751e-08

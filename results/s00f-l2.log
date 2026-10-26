@@ -1,0 +1,49 @@
+2026-10-25 09:10:36
+phictl put: 56400 bytes
+rep 0 l2      4000 passes x 120 threads in 0.5486 s: 92.1 GFLOP/s, 184.1 GB/s of weights
+rep 0 gddr     300 passes x 120 threads in 0.0574 s: 66.0 GFLOP/s, 132.0 GB/s of weights
+rep 0 gddrpf   300 passes x 120 threads in 0.0428 s: 88.5 GFLOP/s, 177.0 GB/s of weights
+rep 1 l2      4000 passes x 120 threads in 0.5387 s: 93.8 GFLOP/s, 187.5 GB/s of weights
+rep 1 gddr     300 passes x 120 threads in 0.0566 s: 66.9 GFLOP/s, 133.8 GB/s of weights
+rep 1 gddrpf   300 passes x 120 threads in 0.0428 s: 88.4 GFLOP/s, 176.9 GB/s of weights
+rep 2 l2      4000 passes x 120 threads in 0.5354 s: 94.3 GFLOP/s, 188.7 GB/s of weights
+rep 2 gddr     300 passes x 120 threads in 0.0572 s: 66.2 GFLOP/s, 132.5 GB/s of weights
+rep 2 gddrpf   300 passes x 120 threads in 0.0429 s: 88.2 GFLOP/s, 176.4 GB/s of weights
+rc 0
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+file                                n    min ns    median       p99     p99.9       max      mean
+l2-l2-r0-all.u32               472000   63627.7  123393.8  167465.6  192549.3 1003665.3  124917.3
+l2-l2-r1-all.u32               472000   64581.6  125110.1  166978.6  183694.6  513836.2  126411.8
+l2-l2-r2-all.u32               472000   63596.2  124405.0  165741.2  182244.0  297595.6  125713.5
+l2-l2-r0-c59.u32                 8000   65873.9  124102.1  176939.9  194520.9  471408.9  125399.6
+l2-l2-r1-c59.u32                 8000   66554.8  126224.8  178346.9  194130.0  249540.2  127330.1
+l2-l2-r2-c59.u32                 8000   66554.8  124897.7  179875.8  199839.6  223165.8  126233.9
+l2-gddr-r0-all.u32              35400   97659.9  171484.7  274949.5  303951.3  400611.3  181970.5
+l2-gddr-r1-all.u32              35400   95364.4  171370.8  273712.9  305590.1  412294.6  181440.7
+l2-gddr-r2-all.u32              35400   98071.0  171626.8  276421.9  308829.8  469555.2  181988.6
+l2-gddr-r0-c59.u32                600   94491.3  182273.9  289101.1  330516.4  330516.4  189389.2
+l2-gddr-r1-c59.u32                600   98852.0  180551.9  276619.8  337633.8  337633.8  187840.1
+l2-gddr-r2-c59.u32                600   99848.7  179539.8  300083.3  341930.7  341930.7  189685.8
+l2-gddrpf-r0-all.u32            35400   39095.6  126035.0  222948.5  297564.9  558164.9  136161.3
+l2-gddrpf-r1-all.u32            35400   38539.9  126102.0  223001.8  307720.8  627935.1  136080.8
+l2-gddrpf-r2-all.u32            35400   36330.1  126111.7  224475.1  326403.6  508582.2  136239.0
+l2-gddrpf-r0-c59.u32              600   38030.3  133186.3  228158.1  302313.3  302313.3  140510.6
+l2-gddrpf-r1-c59.u32              600   38128.0  133655.5  234471.1  292912.6  292912.6  140512.9
+l2-gddrpf-r2-c59.u32              600   37666.0  134213.7  234904.8  305909.2  305909.2  141006.8

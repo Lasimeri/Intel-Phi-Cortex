@@ -1,0 +1,39 @@
+=== sampled, bus-on checkpoint, seed 1 (temp 0.5, top-k 75, top-p 0.95, min-p 0.05, rp 1.2)
+cortex: checkpoint loaded by DMA in 12.1 ms; prompt 11 tokens; sampling
+Once upon a time, there was a little girl named
+. Tom loved to play with her mom. She wanted to share the bird. They played together all day long.
+One day, a new friend, she saw her surprise. The cat did not want to go home, he could be excited and they were playing with her mom. They picked it on it and started to the sky. He was so happy that he got a little girl named said, "I'm my toy?"
+Sara thought it went back to the idea. She had an idea! The bird wanted to see what she saw a big box. Tim liked to play with his room. It was very sadcortex: 11 prompt + 128 generated tokens in 0.095 s: 1458.4 tok/s overall; per token card 377.0 us (mailbox + forward + DMA), host 332.8 us (sampling + print)
+
+
+=== sampled, bus-on, seed 2
+cortex: checkpoint loaded by DMA in 12.2 ms; prompt 11 tokens; sampling
+Once upon a time, there was a little girl named
+. She loved to play with his mom. One day, he found her toy and the bird had an idea. She liked to take the bird. The 
+As she saw her They all day, she went up to they the tree. He felt happy that he could not find it." So, "I's hand and flew into a big Do you friend?"
+The girl was so happy! It said, " One day, he had an idea. She loved to play with her magic.
+<|endoftext|>
+Once upon a time there was a little girl named Sue. The bird liked to play with her toy. Hecortex: 11 prompt + 128 generated tokens in 0.100 s: 1382.6 tok/s overall; per token card 405.7 us (mailbox + forward + DMA), host 342.4 us (sampling + print)
+
+
+=== sampled, bus-off checkpoint, seed 1
+cortex: checkpoint loaded by DMA in 12.2 ms; prompt 11 tokens; sampling
+Once upon a time, there was a little girl named Sue. Max loved to play with his toy.
+One day, her mom saw the bird, "I have a big tree."
+The she heard it in the room. She saw what he was not fun. They all played together every day. The cat had a new friend and scared, but they could not find their friends. 
+<|endoftext|>
+
+
+Lily and share his dad. One day, her mom saw an idea to the sky. She was so happy to be do it and could not like him. They wanted to go around the bird. But then, something unexpected happened of her friend who was very sad. Thecortex: 11 prompt + 128 generated tokens in 0.093 s: 1489.2 tok/s overall; per token card 373.3 us (mailbox + forward + DMA), host 321.5 us (sampling + print)
+
+
+=== sampled, bus-off, prompt 2, seed 3
+cortex: checkpoint loaded by DMA in 12.2 ms; prompt 8 tokens; sampling
+The dog saw a cat. The cat was happy.
+<|endoftext|>
+Once upon a time, there was a big, the little girl named Sue. She loved to play with his mom and played together all day. They had a lot of fun. 
+One day, her mom were playing with their friend and the bird became best friends for help they could not find it. The cat was very happy and had a toy in them. So, he saw him on the always got to into what she was time and his<|endoftext|>
+
+
+Lily and found a big box. She picked up that did not like her mom. She was sad and wanted to take a little girl namedcortex: 8 prompt + 128 generated tokens in 0.092 s: 1473.5 tok/s overall; per token card 369.8 us (mailbox + forward + DMA), host 325.7 us (sampling + print)
+

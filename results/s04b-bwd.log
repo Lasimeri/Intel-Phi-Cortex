@@ -1,0 +1,6 @@
+cluster-gate bwd: 120 columns, L 32, warm 32, pin failures 0, thread 0 cpu 1, thread 119 cpu 240
+chunk: mean loss 8.594224 nats (12.3988 bits/token); forward 743.3 us per step
+backward + gradients: 404.9 us per step (whole chunk 12.96 ms)
+rc=0
+  cg    col  -1  n     128  max |ref| 3.0814e-02  max abs err 1.571e-08  rel 5.100e-07  (at 73: card 2.858170e-02 ref 2.858172e-02)
+  E     col  -1  n  524288  max |ref| 1.9994e-01  max abs err 8.106e-08  rel 4.054e-07  (at 322953: card 1.869589e-01 ref 1.869588e-01)

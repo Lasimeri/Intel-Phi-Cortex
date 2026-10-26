@@ -1,0 +1,1 @@
+unigram: 10000000 train tokens, entropy 8.4523 bits/token; valid 200000 tokens cross-entropy 8.4326 bits/token (2.1289 bits/byte at 3.961 B/token)

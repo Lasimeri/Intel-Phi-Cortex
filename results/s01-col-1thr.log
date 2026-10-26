@@ -1,0 +1,13 @@
+col-gate: 1 threads x 10000 steps, pf 1, column 235968 B at 6702656-B stride offsets, pin failures 0, thread 0 cpu 1, last cpu 1
+wall 0.3320 s: 30122.5 steps/s per thread, 30122.5 column-steps/s
+per step per thread: VPU instructions 0.0 (thread 0 0.0, min 0.0, max 0.0), L2 read misses 152.43 (thread 0 152.43)
+thread 0 step ticks: min 31365, mean 36872.3 (1238.093 MHz: 25.33 us min, 29.78 us mean)
+rc=0
+thread   0, 10000 steps: max abs err / max err rel to the vector's max |ref|
+  u (128)   3.500e-07  1.019e-06
+  bc (16)   3.089e-07  1.044e-06
+  g         8.348e-08  1.592e-07
+  T final   7.185e-08  3.402e-07
+  reference ranges: |u| max 0.7363, g 0.3877..0.6278, a max 0.9270, b max 0.9227, alpha max 0.0105
+file                                n    min ns    median       p99     p99.9       max      mean
+col-n1-ticks-t0.u32             10000   25333.3   27501.2   69333.2  197949.6  323614.6   29781.5

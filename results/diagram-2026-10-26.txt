@@ -1,0 +1,24 @@
+╔═ Desktop host: Ryzen 7 5800X, 31 GiB ═══════════════════════════════════════════════════════╗
+║ ┌ host/cortex (gcc, C) ─────────────────────────┐  ┌ /mnt/Intel Phi Cortex (16TB HDD) ────┐ ║
+║ │ BPE 4096 encode/decode (tools/bpe.c)          │  │ data/bpe/train.u16: 562.7M tokens    │ ║
+║ │ sampler: rp 1.2 (last 64), top-k 75, top-p    │◀─│ data/s4/run4on|off/ckpt.bin 23.5 MB  │ ║
+║ │   0.95, min-p 0.05, temp 0.5, draw: 330 us/tok│  │ results/s0*.md, PLAN.md              │ ║
+║ │ stages ckpt; STEP(token id); reads 4096 logits│  └──────────────────────────────────────┘ ║
+║ └───────────────┬───────────────────────────────┘                                           ║
+║  /dev/shm/phi-hostmem, Cortex part at 1344 MiB: mailbox cmd/ack 0.70 us, staged ckpt at     ║
+║  +1 MiB, logits 16 KiB at +128 KiB (the ACK word is the DMA's status, written after data)   ║
+╚═════════════════╪═══════════════════════════════════════════════════════════════════════════╝
+                  │ PCIe Gen2 x8: mailbox read uncached by the card; DMA ch 2: ckpt in 12.2 ms,
+                  │ logits out per token; control socket + ssh 2222 for files (phi put/get)
+╔═ Xeon Phi 7120A ╪ 61 cores x 4 thr, 1.238 GHz, 15.06 GiB GDDR5, L2 512 KiB/core ════════════╗
+║ ┌───────────────▼ card/cortexd.c (S3 clang -march=knc); thread 0 = mailbox + DMA ────────┐  ║
+║ │ 120 column threads, 2 per core on cores 0-59 (CPUs 4c+1, 4c+2; core 59: 237 and 240)   │  ║
+║ │ column k: 44,512 F32 params (174 KB) + fast weights T 64x64 at a prime-stride offset   │  ║
+║ │   e -> P_in -> bus attention -> RMSNorm -> W -> gated delta rule -> MLP 64 -> u, g, bc │  ║
+║ │ per token: bus[t] 16x120 -> votes g_k u_k -> 12 leaders x 10 -> hc = RMSNorm(sum) cg   │  ║
+║ │   own ETB blocks (2-3 of 256) -> logits -> (max, sum) pairs -> 4096 logits -> DMA      │  ║
+║ │   3 barriers per token (6.8 us each); measured 370-450 us per token, 2,144 tok/s greedy│  ║
+║ ├ training, tools/cluster-gate run: + backward, chunk-end grads, Adam: 1,225 tok/s ──────┤  ║
+║ │ shared GDDR: ETB 2 MiB (blocks of 16 tokens), ES shadow 2 MiB, GET, Adam m/v, bus[L+1] │  ║
+║ └────────────────────────────────────────────────────────────────────────────────────────┘  ║
+╚═════════════════════════════════════════════════════════════════════════════════════════════╝

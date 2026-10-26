@@ -1,0 +1,24 @@
+gen: 11 prompt + 64 generated tokens in 0.027 s (367.8 us per token)
+ids: 428 436 258 396 44 399 282 258 389 473 400 10 46 338 500 265 323 328 335 444 46 338 282 378 375 46 338 282 378 375 46 338 282 378 375 46 10 382 326 44 258 345 44 546 328 335 384 46 338 282 378 375 46 338 282 378 375 46 10 4095 10 428 436 258 396 44 399 282 258 389 473 400 340 46 338
+rc=0
+gen: 11 prompt + 64 generated tokens in 0.027 s (366.9 us per token)
+ids: 428 436 258 396 44 399 282 258 389 473 400 266 500 262 46 10 316 308 258 396 44 316 316 73 73 1415 1415 44 262 258 312 262 46 10 326 758 262 418 384 44 316 418 316 73 258 1271 476 316 73 465 39 115 418 400 409 418 418 431 311 472 454 466 454 265 265 262 262 389 509 266 326 913 262 418 258
+rc=0
+gen: 11 prompt + 64 generated tokens in 0.028 s (377.6 us per token)
+gen: 8 prompt + 64 generated tokens in 0.029 s (407.2 us per token)
+gen: 8 prompt + 64 generated tokens in 0.025 s (347.1 us per token)
+gen: 11 prompt + 64 generated tokens in 0.026 s (354.4 us per token)
+--- gen-off:
+Once upon a time, there was a little girl named Sue.
+One day, a little girl named Sue went to the park. She was very happy. She was very happy. She was very happy.
+One day, a little girl named Sue went to the park. She was very happy. She was very happy. She was very happy. She was very happy
+--- gen-on2:
+The dog saw a cat. The cat was very happy. The bird was very happy.
+<|endoftext|>
+Once upon a time, there was a little girl named Tim. She loved to play with her mom. She was very happy. She was very happy.
+One day, a big, bird named Tim went to the sky. She was very happy.
+--- gen-off2:
+The dog saw a cat. The cat was very happy.
+<|endoftext|>
+Once upon a time, there was a little girl named Sue. She loved to play with his toy. One day, she saw a big, red ball. She was very happy. She was very happy.
+One day, a little girl named Sue went to the park. She

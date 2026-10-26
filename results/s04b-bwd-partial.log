@@ -1,0 +1,8 @@
+ctrain-check bwd: N 120, L 32, warm 32: mean loss ref 8.594224 card 8.594224; max |loss err| 7.563e-07
+  P_in  col   0  n    8192  max |ref| 1.1178e-02  max abs err 3.697e-09  rel 3.308e-07  (at 6476: card 8.559429e-03 ref 8.559433e-03)
+  Wqb   col   0  n    1024  max |ref| 8.0777e-05  max abs err 3.577e-11  rel 4.428e-07  (at 401: card 6.673249e-05 ref 6.673246e-05)
+  P_in  col  59  n    8192  max |ref| 1.0174e-02  max abs err 3.286e-09  rel 3.230e-07  (at 6069: card 6.117247e-03 ref 6.117243e-03)
+  Wqb   col  59  n    1024  max |ref| 1.0391e-04  max abs err 3.448e-11  rel 3.318e-07  (at 763: card -1.024073e-05 ref -1.024069e-05)
+  P_in  col 119  n    8192  max |ref| 8.9368e-03  max abs err 2.920e-09  rel 3.267e-07  (at 1022: card -7.863949e-03 ref -7.863952e-03)
+  Wqb   col 119  n    1024  max |ref| 9.1016e-05  max abs err 4.238e-11  rel 4.656e-07  (at 697: card -2.897799e-05 ctrain-check: data/s4/cl-gcg.f32 missing or short, skipped
+ctrain-check: data/s4/cl-get.f32 missing or short, skipped

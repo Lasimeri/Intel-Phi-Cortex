@@ -1,0 +1,17 @@
+run: 200000 tokens = 6250 chunks of 32, lr 0.003 (warm-up 50 chunks), b1 0.9 b2 0.95, valid 64000 tokens
+chunk    500  tokens     16000  loss 5.5154 nats = 7.9570 bits/token  lr 3.00e-03  773 tok/s  (us/step: fwd 67 head 189 dhc 449 bwd 90 grads 313 adam 184)
+chunk   1000  tokens     32000  loss 4.9713 nats = 7.1720 bits/token  lr 3.00e-03  773 tok/s  (us/step: fwd 66 head 190 dhc 450 bwd 91 grads 312 adam 185)
+chunk   1500  tokens     48000  loss 4.8697 nats = 7.0255 bits/token  lr 3.00e-03  773 tok/s  (us/step: fwd 67 head 190 dhc 449 bwd 90 grads 312 adam 185)
+chunk   2000  tokens     64000  loss 4.7248 nats = 6.8164 bits/token  lr 3.00e-03  773 tok/s  (us/step: fwd 67 head 190 dhc 449 bwd 91 grads 313 adam 185)
+chunk   2500  tokens     80000  loss 4.6934 nats = 6.7711 bits/token  lr 3.00e-03  773 tok/s  (us/step: fwd 67 head 190 dhc 449 bwd 90 grads 313 adam 185)
+chunk   3000  tokens     96000  loss 4.6338 nats = 6.6851 bits/token  lr 3.00e-03  773 tok/s  (us/step: fwd 66 head 190 dhc 449 bwd 91 grads 313 adam 185)
+chunk   3500  tokens    112000  loss 4.5981 nats = 6.6336 bits/token  lr 3.00e-03  773 tok/s  (us/step: fwd 67 head 190 dhc 449 bwd 90 grads 313 adam 185)
+chunk   4000  tokens    128000  loss 4.5071 nats = 6.5023 bits/token  lr 3.00e-03  773 tok/s  (us/step: fwd 66 head 190 dhc 449 bwd 91 grads 313 adam 185)
+chunk   4500  tokens    144000  loss 4.6172 nats = 6.6612 bits/token  lr 3.00e-03  772 tok/s  (us/step: fwd 67 head 190 dhc 450 bwd 90 grads 313 adam 185)
+chunk   5000  tokens    160000  loss 4.5588 nats = 6.5770 bits/token  lr 3.00e-03  773 tok/s  (us/step: fwd 66 head 190 dhc 449 bwd 91 grads 313 adam 185)
+chunk   5500  tokens    176000  loss 4.4933 nats = 6.4824 bits/token  lr 3.00e-03  773 tok/s  (us/step: fwd 67 head 190 dhc 449 bwd 90 grads 313 adam 185)
+chunk   6000  tokens    192000  loss 4.5018 nats = 6.4947 bits/token  lr 3.00e-03  773 tok/s  (us/step: fwd 67 head 190 dhc 449 bwd 91 grads 313 adam 185)
+chunk   6250  tokens    200000  loss 4.4593 nats = 6.4334 bits/token  lr 3.00e-03  772 tok/s  (us/step: fwd 67 head 189 dhc 448 bwd 91 grads 314 adam 185)
+run: 6250 chunks in 258.7 s
+valid: 64000 tokens, loss 4.5391 nats = 6.5485 bits/token = 1.6533 bits/byte (3.961 B/token)
+rc=0

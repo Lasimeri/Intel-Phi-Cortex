@@ -1,0 +1,19 @@
+cluster-gate fwd: 120 columns, L 32, warm 32, pin failures 0, thread 0 cpu 1, thread 119 cpu 240
+pmu 0x10cb per step per thread over the measured chunk (forward): mean 2499.3, thread 0 3127.8, max 3127.8
+chunk: mean loss 8.594224 nats (12.3988 bits/token); forward 373.0 us per step
+cluster-gate bwd: 120 columns, L 32, warm 32, pin failures 0, thread 0 cpu 1, thread 119 cpu 240
+pmu 0x10cb per step per thread over the measured chunk (forward): mean 2485.2, thread 0 3064.4, max 3064.4
+chunk: mean loss 8.594224 nats (12.3988 bits/token); forward 689.6 us per step
+backward + gradients: 394.2 us per step (whole chunk 12.61 ms)
+pmu 0x16 per step per thread over the measured chunk (forward): mean 41320.4, thread 0 46698.9, max 47906.4
+rc=0
+ctrain-check bwd: N 120, L 32, warm 32: mean loss ref 8.594224 card 8.594224; max |loss err| 7.563e-07
+  hc    col  -1  n    4096  max |ref| 3.4028e+00  max abs err 1.302e-06  rel 3.826e-07  (at 3865: card 4.225963e-01 ref 4.225950e-01)
+  P_in  col   0  n    8192  max |ref| 1.1178e-02  max abs err 3.697e-09  rel 3.308e-07  (at 6476: card 8.559429e-03 ref 8.559433e-03)
+  Wqb   col   0  n    1024  max |ref| 8.0777e-05  max abs err 3.577e-11  rel 4.428e-07  (at 401: card 6.673249e-05 ref 6.673246e-05)
+  P_in  col  59  n    8192  max |ref| 1.0174e-02  max abs err 3.286e-09  rel 3.230e-07  (at 6069: card 6.117247e-03 ref 6.117243e-03)
+  Wqb   col  59  n    1024  max |ref| 1.0391e-04  max abs err 3.448e-11  rel 3.318e-07  (at 763: card -1.024073e-05 ref -1.024069e-05)
+  P_in  col 119  n    8192  max |ref| 8.9368e-03  max abs err 2.920e-09  rel 3.267e-07  (at 1022: card -7.863949e-03 ref -7.863952e-03)
+  Wqb   col 119  n    1024  max |ref| 9.1016e-05  max abs err 4.238e-11  rel 4.656e-07  (at 697: card -2.897799e-05 ref -2.897795e-05)
+  cg    col  -1  n     128  max |ref| 3.0814e-02  max abs err 1.571e-08  rel 5.100e-07  (at 73: card 2.858170e-02 ref 2.858172e-02)
+  E     col  -1  n  524288  max |ref| 1.9994e-01  max abs err 8.106e-08  rel 4.054e-07  (at 322953: card 1.869589e-01 ref 1.869588e-01)

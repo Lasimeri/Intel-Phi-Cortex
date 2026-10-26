@@ -1,0 +1,116 @@
+2026-10-25 09:13:47
+phictl put: 58056 bytes
+pinning (setup): 1 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 0 cpu 1
+rep 0 l2      4000 passes x 1 threads in 0.2655 s: 1.6 GFLOP/s, 3.2 GB/s of weights
+rep 0 l2pf2   4000 passes x 1 threads in 0.0580 s: 7.3 GFLOP/s, 14.5 GB/s of weights
+rep 0 l2st    4000 passes x 1 threads in 0.2653 s: 1.6 GFLOP/s, 3.2 GB/s of weights
+rep 0 l2stpf2 4000 passes x 1 threads in 0.0580 s: 7.3 GFLOP/s, 14.5 GB/s of weights
+rep 0 gddrpf   300 passes x 1 threads in 0.0128 s: 2.5 GFLOP/s, 4.9 GB/s of weights
+rep 1 l2      4000 passes x 1 threads in 0.2745 s: 1.5 GFLOP/s, 3.1 GB/s of weights
+rep 1 l2pf2   4000 passes x 1 threads in 0.0770 s: 5.5 GFLOP/s, 10.9 GB/s of weights
+rep 1 l2st    4000 passes x 1 threads in 0.2654 s: 1.6 GFLOP/s, 3.2 GB/s of weights
+rep 1 l2stpf2 4000 passes x 1 threads in 0.0582 s: 7.2 GFLOP/s, 14.5 GB/s of weights
+rep 1 gddrpf   300 passes x 1 threads in 0.0127 s: 2.5 GFLOP/s, 5.0 GB/s of weights
+pinning (last run): 1 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 0 cpu 1
+pinning (setup): 60 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 59 cpu 237
+rep 0 l2      4000 passes x 60 threads in 0.4279 s: 59.0 GFLOP/s, 118.0 GB/s of weights
+rep 0 l2pf2   4000 passes x 60 threads in 0.1797 s: 140.5 GFLOP/s, 281.0 GB/s of weights
+rep 0 l2st    4000 passes x 60 threads in 0.4890 s: 51.6 GFLOP/s, 103.3 GB/s of weights
+rep 0 l2stpf2 4000 passes x 60 threads in 0.2343 s: 107.8 GFLOP/s, 215.5 GB/s of weights
+rep 0 gddrpf   300 passes x 60 threads in 0.0215 s: 88.1 GFLOP/s, 176.2 GB/s of weights
+rep 1 l2      4000 passes x 60 threads in 0.4898 s: 51.6 GFLOP/s, 103.1 GB/s of weights
+rep 1 l2pf2   4000 passes x 60 threads in 0.1952 s: 129.3 GFLOP/s, 258.7 GB/s of weights
+rep 1 l2st    4000 passes x 60 threads in 0.4924 s: 51.3 GFLOP/s, 102.6 GB/s of weights
+rep 1 l2stpf2 4000 passes x 60 threads in 0.2388 s: 105.7 GFLOP/s, 211.5 GB/s of weights
+rep 1 gddrpf   300 passes x 60 threads in 0.0216 s: 87.9 GFLOP/s, 175.7 GB/s of weights
+pinning (last run): 60 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 59 cpu 237
+pinning (setup): 120 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 119 cpu 240
+rep 0 l2      4000 passes x 120 threads in 0.5859 s: 86.2 GFLOP/s, 172.4 GB/s of weights
+rep 0 l2pf2   4000 passes x 120 threads in 0.6562 s: 77.0 GFLOP/s, 153.9 GB/s of weights
+rep 0 l2st    4000 passes x 120 threads in 0.5856 s: 86.2 GFLOP/s, 172.5 GB/s of weights
+rep 0 l2stpf2 4000 passes x 120 threads in 0.6482 s: 77.9 GFLOP/s, 155.8 GB/s of weights
+rep 0 gddrpf   300 passes x 120 threads in 0.0429 s: 88.2 GFLOP/s, 176.4 GB/s of weights
+rep 1 l2      4000 passes x 120 threads in 0.5829 s: 86.6 GFLOP/s, 173.3 GB/s of weights
+rep 1 l2pf2   4000 passes x 120 threads in 0.6550 s: 77.1 GFLOP/s, 154.2 GB/s of weights
+rep 1 l2st    4000 passes x 120 threads in 0.5885 s: 85.8 GFLOP/s, 171.6 GB/s of weights
+rep 1 l2stpf2 4000 passes x 120 threads in 0.6478 s: 78.0 GFLOP/s, 155.9 GB/s of weights
+rep 1 gddrpf   300 passes x 120 threads in 0.0450 s: 84.2 GFLOP/s, 168.4 GB/s of weights
+pinning (last run): 120 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 119 cpu 240
+rc 0
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 141600 bytes
+phictl get: 2400 bytes
+phictl get: 1200 bytes
+phictl get: 0 bytes
+phictl get: 1200 bytes
+phictl get: 0 bytes
+phictl get: 70800 bytes
+phictl get: 1200 bytes
+phictl get: 70800 bytes
+phictl get: 1200 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 16000 bytes
+phictl get: 0 bytes
+phictl get: 16000 bytes
+phictl get: 0 bytes
+phictl get: 944000 bytes
+phictl get: 16000 bytes
+phictl get: 944000 bytes
+phictl get: 16000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 16000 bytes
+phictl get: 0 bytes
+phictl get: 16000 bytes
+phictl get: 0 bytes
+phictl get: 944000 bytes
+phictl get: 16000 bytes
+phictl get: 944000 bytes
+phictl get: 16000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 16000 bytes
+phictl get: 0 bytes
+phictl get: 16000 bytes
+phictl get: 0 bytes
+phictl get: 944000 bytes
+phictl get: 16000 bytes
+phictl get: 944000 bytes
+phictl get: 16000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 1888000 bytes
+phictl get: 32000 bytes
+phictl get: 16000 bytes
+phictl get: 0 bytes
+phictl get: 16000 bytes
+phictl get: 0 bytes
+phictl get: 944000 bytes
+phictl get: 16000 bytes
+phictl get: 944000 bytes
+phictl get: 16000 bytes
+file                                n    min ns    median       p99     p99.9       max      mean
+l2-l2-s120-r0-all.u32            4000   64921.6   64921.6   81529.4   96340.9  274171.6   66245.2
+l2-l2-s120-r1-all.u32            4000   64921.6   64921.6  110199.3  143904.4  317628.0   68496.6
+l2-l2stpf2-s120-r0-all.u32       4000   13985.2   14001.4   25830.9   43215.7   90384.2   14374.8
+l2-l2stpf2-s120-r1-all.u32       4000   13994.9   14001.4   25931.0   48628.8   75402.3   14424.7
+l2-l2-s2-r0-all.u32            236000   64920.8  104881.5  131797.9  142255.1  480509.1  104103.3
+l2-l2-s2-r1-all.u32            236000   65273.0  107021.0  152816.5  163831.8  284829.2  108082.2
+l2-l2stpf2-s2-r0-all.u32       236000   13982.8   40247.4   88214.7  105866.0  342759.4   42805.9
+l2-l2stpf2-s2-r1-all.u32       236000   13994.9   40821.7   89079.7  106354.7  194403.0   43764.6
+l2-l2-s1-r0-all.u32            472000   65277.0  138832.1  178909.0  196200.1  504810.2  137034.3
+l2-l2-s1-r1-all.u32            472000   65898.9  141279.4  179689.2  195542.7  330901.6  139089.3
+l2-l2stpf2-s1-r0-all.u32       472000   13469.9  135732.9  215567.0  261736.4  515639.0  133657.1
+l2-l2stpf2-s1-r1-all.u32       472000   13463.4  135011.7  216517.7  261837.4  376825.5  132681.4
+l2-gddrpf-s2-r0-all.u32         17700   28901.7   62720.7  146523.7  169748.2  352915.3   68484.7
+l2-gddrpf-s2-r1-all.u32         17700   28029.4   62828.1  147564.8  174622.6  282730.0   68514.8
+l2-gddrpf-s1-r0-all.u32         35400   37993.1  126122.2  216995.8  287141.6  560332.7  135939.3
+l2-gddrpf-s1-r1-all.u32         35400   37055.4  126041.4  239873.7  331315.2  722761.5  136738.4

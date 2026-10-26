@@ -1,0 +1,6 @@
+phictl put: 34328 bytes
+cpu 66
+vpu add 1.5 + 2.25 = 3.75 (lane 0), 3.75 (lane 15)
+tsc 1238.093 MHz over 1.000000 s
+dcr 0x0000169d: ch0=off/host ch1=on/host ch2=off/host ch3=on/card ch4=on/card ch5=off/host ch6=off/host ch7=off/card
+rc 0

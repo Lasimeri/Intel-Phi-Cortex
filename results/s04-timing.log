@@ -1,0 +1,13 @@
+chunk: mean loss 8.594224 nats (12.3988 bits/token); forward 391.9 us per step
+chunk: mean loss 8.594224 nats (12.3988 bits/token); forward 357.7 us per step
+chunk: mean loss 8.594224 nats (12.3988 bits/token); forward 364.6 us per step
+backward + gradients: 403.4 us per step (whole chunk 12.91 ms)
+chunk: mean loss 8.594224 nats (12.3988 bits/token); forward 355.6 us per step
+backward + gradients: 394.5 us per step (whole chunk 12.62 ms)
+rc=0
+cluster-gate: chunk: mean loss 8.594224 nats (12.3988 bits/token); forward 369.1 us per step
+cluster-gate-nosnap: chunk: mean loss 8.594224 nats (12.3988 bits/token); forward 350.8 us per step
+cluster-gate-nocoll: chunk: mean loss 0.000000 nats (0.0000 bits/token); forward 179.8 us per step
+cluster-gate: chunk: mean loss 8.594224 nats (12.3988 bits/token); forward 359.9 us per step
+cluster-gate-nosnap: chunk: mean loss 8.594224 nats (12.3988 bits/token); forward 345.2 us per step
+cluster-gate-nocoll: chunk: mean loss 0.000000 nats (0.0000 bits/token); forward 180.0 us per step

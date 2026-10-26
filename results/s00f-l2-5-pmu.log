@@ -1,0 +1,38 @@
+2026-10-25 09:15:44
+phictl put: 59936 bytes
+pinning (setup): 1 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 0 cpu 1
+rep 0 l2      4000 passes x 1 threads in 0.2657 s: 1.6 GFLOP/s, 3.2 GB/s of weights
+    per pass per thread: L2 read misses 2.2 (worst thread 2.2), L1 data read misses 0.0; lines per block 3288
+rep 0 l2pf2   4000 passes x 1 threads in 0.0583 s: 7.2 GFLOP/s, 14.4 GB/s of weights
+    per pass per thread: L2 read misses 1.3 (worst thread 1.3), L1 data read misses 0.0; lines per block 3288
+rep 0 l2st    4000 passes x 1 threads in 0.2705 s: 1.6 GFLOP/s, 3.1 GB/s of weights
+    per pass per thread: L2 read misses 3.2 (worst thread 3.2), L1 data read misses 0.0; lines per block 3288
+rep 0 l2stpf2 4000 passes x 1 threads in 0.0585 s: 7.2 GFLOP/s, 14.4 GB/s of weights
+    per pass per thread: L2 read misses 1.3 (worst thread 1.3), L1 data read misses 0.0; lines per block 3288
+rep 0 gddrpf   300 passes x 1 threads in 0.0129 s: 2.4 GFLOP/s, 4.9 GB/s of weights
+    per pass per thread: L2 read misses 3292.7 (worst thread 3292.7), L1 data read misses 0.0; lines per block 3288
+pinning (last run): 1 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 0 cpu 1
+pinning (setup): 60 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 59 cpu 237
+rep 0 l2      4000 passes x 60 threads in 0.4954 s: 51.0 GFLOP/s, 101.9 GB/s of weights
+    per pass per thread: L2 read misses 147.1 (worst thread 322.5), L1 data read misses 0.0; lines per block 3288
+rep 0 l2pf2   4000 passes x 60 threads in 0.2025 s: 124.7 GFLOP/s, 249.5 GB/s of weights
+    per pass per thread: L2 read misses 138.4 (worst thread 223.8), L1 data read misses 0.0; lines per block 3288
+rep 0 l2st    4000 passes x 60 threads in 0.5461 s: 46.2 GFLOP/s, 92.5 GB/s of weights
+    per pass per thread: L2 read misses 435.6 (worst thread 975.5), L1 data read misses 0.0; lines per block 3288
+rep 0 l2stpf2 4000 passes x 60 threads in 0.2420 s: 104.3 GFLOP/s, 208.7 GB/s of weights
+    per pass per thread: L2 read misses 292.8 (worst thread 574.7), L1 data read misses 0.0; lines per block 3288
+rep 0 gddrpf   300 passes x 60 threads in 0.0222 s: 85.2 GFLOP/s, 170.5 GB/s of weights
+    per pass per thread: L2 read misses 3324.5 (worst thread 3333.7), L1 data read misses 0.0; lines per block 3288
+pinning (last run): 60 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 59 cpu 237
+pinning (setup): 120 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 119 cpu 240
+rep 0 l2      4000 passes x 120 threads in 0.6366 s: 79.3 GFLOP/s, 158.7 GB/s of weights
+    per pass per thread: L2 read misses 1905.7 (worst thread 3105.2), L1 data read misses 0.0; lines per block 3288
+rep 0 l2pf2   4000 passes x 120 threads in 0.7276 s: 69.4 GFLOP/s, 138.8 GB/s of weights
+    per pass per thread: L2 read misses 1672.6 (worst thread 2509.8), L1 data read misses 0.0; lines per block 3288
+rep 0 l2st    4000 passes x 120 threads in 0.6271 s: 80.5 GFLOP/s, 161.1 GB/s of weights
+    per pass per thread: L2 read misses 1903.8 (worst thread 3052.0), L1 data read misses 0.0; lines per block 3288
+rep 0 l2stpf2 4000 passes x 120 threads in 0.6683 s: 75.6 GFLOP/s, 151.1 GB/s of weights
+    per pass per thread: L2 read misses 1643.0 (worst thread 2387.8), L1 data read misses 0.0; lines per block 3288
+rep 0 gddrpf   300 passes x 120 threads in 0.0432 s: 87.6 GFLOP/s, 175.2 GB/s of weights
+    per pass per thread: L2 read misses 3297.2 (worst thread 3335.3), L1 data read misses 0.0; lines per block 3288
+pinning (last run): 120 threads, 0 setaffinity failures, 0 on another CPU; thread 0 cpu 1, thread 119 cpu 240

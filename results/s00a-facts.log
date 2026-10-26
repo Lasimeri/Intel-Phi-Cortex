@@ -1,0 +1,39 @@
+host 2026-10-25 09:00:08
+card 2026-10-25 13:57:39
+nproc 244
+MemTotal:       15789924 kB
+MemFree:        11130884 kB
+HugePages_Total:    2052
+HugePages_Free:     2052
+Hugepagesize:       2048 kB
+swaps:
+Filename				Type		Size		Used		Priority
+loadavg 2.11 2.67 3.66 3/1589 4438
+proc 1 init psr 73 threads 1
+proc 1333 phiblk0-poll psr 239 threads 1
+proc 1334 phiblk1-poll psr 238 threads 1
+proc 1626 syslogd psr 34 threads 1
+proc 1628 klogd psr 36 threads 1
+proc 1644 dropbear psr 38 threads 1
+proc 1645 phi-agent psr 17 threads 1
+proc 1653 sh psr 89 threads 1
+proc 4433 sh psr 209 threads 1
+locks:
+-rw-------    1 root     root             0 Oct 25 05:53 /tmp/phi-cdma3.lock
+-rw-------    1 root     root             0 Oct 25 05:24 /tmp/phi-cdma4.lock
+user procs (non-kernel):
+    1 root      0:01 {init} /bin/sh /init
+ 1626 root      0:00 /bin/syslogd -O /var/log/messages -s 2048 -b 4
+ 1628 root      0:00 /bin/klogd
+ 1644 root      0:00 /bin/dropbear -s -p 10.9.0.2:22
+ 1645 root     23:56 /bin/phi-agent
+ 1653 root      0:00 /bin/sh -l
+ 4433 root      0:03 sh -c date "+card %F %T"; echo "nproc $(nproc)"; grep -E "MemTotal|MemFree|HugePages_(Total|Free)|Hugepagesize" /proc/meminfo; echo "swaps:"; cat /proc/swaps; echo "loadavg $(cat /proc/loadavg)"; for p in /proc/[0-9]*; do c=$(cat $p/comm 2>/dev/null); case "$c" in phiblk*|phi-agent|dropbear|syslogd|klogd|sh|init) echo "proc $(basename $p) $c psr $(cut -d" " -f39 $p/stat) threads $(ls $p/task | wc -l)";; esac; done; echo "locks:"; ls -l /tmp/phi-cdma*.lock 2>&1; echo "user procs (non-kernel):"; ps | grep -v -E " \[[^]]*\]$" | tail -n +2
+ 6073 root      0:00 ps
+ 6074 root      0:00 grep -v -E  \[[^]]*\]$
+ 6075 root      0:00 tail -n +2
+1333 D 2771 89201
+1334 D 0 90349
+1333 D 2771 89213
+1334 R 0 90361
+sh: getconf: not found

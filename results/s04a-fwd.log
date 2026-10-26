@@ -1,0 +1,14 @@
+cluster-gate fwd: 120 columns, L 32, warm 32, pin failures 0, thread 0 cpu 1, thread 119 cpu 240
+chunk: mean loss 8.594224 nats (12.3988 bits/token); forward 747.2 us per step
+rc=0
+ctrain-check fwd: N 120, L 32, warm 32: mean loss ref 8.594224 card 8.594224; max |loss err| 7.563e-07
+  hc    col  -1  n    4096  max |ref| 3.4028e+00  max abs err 1.302e-06  rel 3.826e-07  (at 3865: card 4.225963e-01 ref 4.225950e-01)
+  u     col   0  n    4096  max |ref| 4.8582e-01  max abs err 1.953e-07  rel 4.020e-07  (at 3944: card 2.246352e-01 ref 2.246350e-01)
+  bc    col   0  n     512  max |ref| 3.9995e-01  max abs err 1.573e-07  rel 3.934e-07  (at 80: card -3.137223e-01 ref -3.137221e-01)
+  g     col   0  n     512  max |ref| 5.2284e-01  max abs err 6.561e-08  rel 1.255e-07  (at 400: card 5.228379e-01 ref 5.228378e-01)
+  u     col  59  n    4096  max |ref| 5.1995e-01  max abs err 2.034e-07  rel 3.911e-07  (at 2376: card 3.066654e-01 ref 3.066656e-01)
+  bc    col  59  n     512  max |ref| 4.7151e-01  max abs err 1.530e-07  rel 3.245e-07  (at 220: card -2.491331e-02 ref -2.491346e-02)
+  g     col  59  n     512  max |ref| 5.7471e-01  max abs err 4.876e-08  rel 8.484e-08  (at 272: card 5.353985e-01 ref 5.353985e-01)
+  u     col 119  n    4096  max |ref| 5.4616e-01  max abs err 2.096e-07  rel 3.837e-07  (at 359: card 2.168600e-01 ref 2.168598e-01)
+  bc    col 119  n     512  max |ref| 4.2718e-01  max abs err 1.478e-07  rel 3.460e-07  (at 506: card -2.605628e-01 ref -2.605629e-01)
+  g     col 119  n     512  max |ref| 5.6821e-01  max abs err 4.745e-08  rel 8.352e-08  (at 48: card 4.524890e-01 ref 4.524889e-01)
